@@ -1,0 +1,316 @@
+.App {
+  text-align: center;
+}
+
+.eventbutton {
+  font-size: 16px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  margin: auto;
+  padding: 1em 4em 1em 4em;
+  border: none;
+  background: #000000;
+  transition: all 0.1s linear;
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1); 
+ }
+ 
+.eventbutton:active {
+  transform: scale(0.95);
+ }
+ 
+ .eventbutton span {
+  color: #26b1ac;
+ }
+ 
+ .eventbutton .border {
+  position: absolute;
+  border: 0.15em solid #000000;
+  transition: all 0.3s 0.08s linear;
+  top: 50%;
+  left: 50%;
+  width: 12.9em;
+  height: 3em;
+  transform: translate(-50%, -50%);
+ }
+ 
+ .eventbutton:hover .border {
+  display: block;
+  width: 13.5em;
+  height: 3.7em;
+ }
+ 
+ .full-rounded {
+  border-radius: 2em;  }               /*Button rechts oben*/
+
+
+
+   .menubutton {
+    font-size: 16px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    margin: auto;
+    padding: 1em 1em 1em 1em;
+    border: none;
+    background: #000000;
+    transition: all 0.1s linear;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+   }
+   
+  .menubutton:active {
+    transform: scale(0.95);
+   }
+   
+   .menubutton span {
+    color: #26b1ac;
+   }
+   
+   .menubutton .border {
+    position: absolute;
+    border: 0.15em solid #000000;
+    transition: all 0.3s 0.08s linear;
+    top: 50%;
+    left: 50%;
+    width: 3.6em;
+    height: 2.8em;
+    transform: translate(-50%, -50%);
+   }
+   
+   .menubutton:hover .border {
+    display: block;
+    width: 5em;
+    height: 3.7em;
+   }
+   
+   .menufull-rounded {
+    border-radius: 2em;    }     /*MenüButton*/
+
+    .dropdown-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      position: absolute;
+      top: 10px;
+      left: 100px;
+    }
+    
+    .menuitem {
+      font-size: 16px;
+     
+      
+      margin: 5px;
+      padding: 1em 1em 1em 1em;
+      border: none;
+      background: #ffffff;
+      transition: all 0.1s linear;
+      box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+     }
+     
+    .menuitem:active {
+      transform: scale(0.95);
+     }
+     
+     .menuitem span {
+      color: #26b1ac;
+     }
+     
+     .menuitem .border {
+      position: static;
+      border: 0.15em solid #000000;
+      transition: all 0.3s 0.08s linear;
+      top: 50%;
+      left: 50%;
+      width: 3.6em;
+      height: 2.8em;
+      transform: translate(-50%, -50%);
+     }
+     
+     .menuitem:hover .border {
+      display: block;
+      width: 5em;
+      height: 3.7em;
+     }
+     
+     .menuitemfull-rounded {
+      border-radius: 2em;    }     /*Menüitem*/
+  
+
+ 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.header {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 5px 0 5px;
+    border: none;
+    font: normal 50px/1 Impact, Charcoal, sans-serif;
+    color: black;
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: rgb(255, 255, 255);
+}
+
+.CfK {
+  font: normal 18px/1 Impact, Charcoal, sans-serif;
+  text-align: center;
+  
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.EingereichteEvents {
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  border-radius: 0.5rem;
+  max-width: 290px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  background-color: #16fcf4;
+}
+
+.card {
+  margin: 15px;
+  width: 190px;
+  height: 254px;
+  background: rgb(45, 45, 45);
+  transition: all 0.4s;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: 900;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+
+  background: rgb(0, 0, 0);
+}
+
+.first-content, .second-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+}
+
+.first-content {
+  opacity: 1;
+}
+
+.card:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  opacity: 0;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+  height: 0%;
+}
+
+.card:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+.first-content img {
+  width: 100%; /* Stellt sicher, dass das Bild die gesamte Breite des Containers einnimmt */
+  height: 100%; /* Stellt sicher, dass das Bild die gesamte Höhe des Containers einnimmt */
+  object-fit: cover; /* Passt das Bild an, um den Container ohne Verzerrung zu füllen */
+  border-radius: 10px; /* Optional: passt den Randradius an, um ihn an den der Karte anzupassen */
+}
+
+.slogan{
+  font-size: 20px;
+  text-align: center; /* Zentriert den Text */
+  margin-top: 20px; /* Fügt Abstand von oben hinzu */
+  margin-left: auto; /* Zentriert den Block horizontal (in Kombination mit margin-right) */
+  margin-right: auto;
+  max-width: 80%; /* Begrenzt die maximale Breite für bessere Lesbarkeit */
+  padding: 0 20px; /* Fügt einen inneren Abstand hinzu, damit der Text nicht direkt am Rand anliegt */
+}
+.bild2{
+
+
+
+  width: 550px; /* Verkleinert die Breite des Bildes auf 50% seiner ursprünglichen Größe */
+            height:600px ; /* Setzt die Höhe automatisch, um das Seitenverhältnis zu bewahren */
+            float: left; /* Setzt das Bild an den linken Rand */
+}
+.bild1{
+
+  width: 50%; /* Verkleinert die Breite des Bildes auf 50% seiner ursprünglichen Größe */
+  height: auto; /* Setzt die Höhe automatisch, um das Seitenverhältnis zu bewahren */
+  float: left; /* Setzt das Bild an den linken Rand */
+}
+
+.event {
+  display: flex; /* Ermöglicht Flexbox-Layout innerhalb dieser Box */
+  align-items: flex-start; /* Ändert vertikales Zentrieren zu Start, falls nötig */
+  width: 1000px;
+  height: auto; /* oder eine spezifische Höhe, falls gewünscht */
+  border-radius: 44px;
+  border: 6px solid #000000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 20px; /* Fügt etwas Platz innerhalb der Box hinzu */
+}
+
+.eventbild {
+  width: 100px;
+  height: 100px;
+  margin-right: 200px; /* Anpassung des Abstands nach Bedarf */
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column; /* Ordnet die .detail-Elemente vertikal an */
+}
+
+.detail {
+  margin-bottom: 10px; /* Fügt einen Abstand zwischen den Details hinzu */
+}
